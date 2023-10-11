@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TPCalculatrice", "TPCalculatrice.csproj", "{1E92EB35-C839-43BC-94C2-3F7885DF15B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E92EB35-C839-43BC-94C2-3F7885DF15B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E92EB35-C839-43BC-94C2-3F7885DF15B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E92EB35-C839-43BC-94C2-3F7885DF15B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E92EB35-C839-43BC-94C2-3F7885DF15B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A2AAAF0-AF68-4D74-9FDB-AE816CDA478A}
+	EndGlobalSection
+EndGlobal
