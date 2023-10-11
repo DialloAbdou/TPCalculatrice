@@ -1,9 +1,10 @@
 using System.Diagnostics;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Namespace;
 public class Calculatrice
 {
-    public Operation _operation { get; set; }
+    public Operation _operation { get; }
     public Calculatrice(Operation operation)
     {
         _operation = operation;
@@ -16,6 +17,8 @@ public class Calculatrice
     {
        _operation.Executer();
     }
+
+ 
 
 
 }

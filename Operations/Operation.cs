@@ -2,9 +2,9 @@ using System.Runtime.ConstrainedExecution;
 namespace Namespace;
 public abstract class Operation
 {
-    public int OperandeDroite { get; set; }
-    public int OperandeGauche { get; set; }
-    public int Resultat { get; set; }
+    protected int OperandeDroite { get; }
+    protected int OperandeGauche { get;  }
+    public int Resultat { get; protected set; }
     public Operation(int operandeGauch, int operandeDroite)
     {
        OperandeGauche = operandeGauch;

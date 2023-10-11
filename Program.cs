@@ -42,7 +42,7 @@ else
 Calculatrice calculatrice = new Calculatrice(operation);
 calculatrice.Executer();
 
-Console.WriteLine($"le resultat :{ calculatrice._operation.Resultat }");
+ Console.WriteLine($"le resultat :{ calculatrice._operation.Resultat }");
 
 
 
