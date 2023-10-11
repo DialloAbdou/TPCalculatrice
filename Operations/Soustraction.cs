@@ -6,9 +6,9 @@ public class Soustraction : Operation
     }
 
     /// <summary>
-    /// 
+    /// la fonction
     /// </summary>
-    public void Executer()
+    public override void Executer()
     {
         Resultat = OperandeGauche - OperandeDroite;
     }

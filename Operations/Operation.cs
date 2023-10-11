@@ -1,7 +1,6 @@
 using System.Runtime.ConstrainedExecution;
-
 namespace Namespace;
-public class Operation
+public abstract class Operation
 {
     public int OperandeDroite { get; set; }
     public int OperandeGauche { get; set; }
@@ -11,6 +10,6 @@ public class Operation
        OperandeGauche = operandeGauch;
        OperandeDroite = operandeDroite;
     }
-   
+     public  abstract void Executer();
 
 }
