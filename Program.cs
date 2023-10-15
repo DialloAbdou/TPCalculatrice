@@ -1,44 +1,37 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.Reflection;
 using Namespace;
-int getValeur(int n)
+int getValeur(string valeur )
 {
-    int resultat = 0;
-    Console.WriteLine($"Veuillez saisir {n} valeur");
-    string? saisie = Console.ReadLine();
-    if (saisie is not null)
+    int? resultat = null;
+    while (!resultat.HasValue)
     {
-        try
+        Console.WriteLine($"Veuillez saisir la {valeur} valeur entière");
+        string? saisie = Console.ReadLine();
+        if (saisie is not null)
         {
-            resultat = int.Parse(saisie);
-        }
-        catch
-        {
-            resultat = 0;
+            try
+            {
+                resultat = int.Parse(saisie);
+
+
+            }
+            catch
+            {
+                resultat = null;
+            }
         }
 
     }
-    return resultat;
+    return resultat.Value;
 }
 Console.WriteLine("===La pétite calculatrice=====");
 // instanciation de la classe Calculatrice
 int operandeGauche = 0;
 int operandeDroite = 0;
-// Console.WriteLine("Veuillez Saisir la Prémière Valeure !");
-// string? strOperandeGauche = Console.ReadLine();
-// if (strOperandeGauche is not null)
-// {
-//     operandeGauche = int.Parse(strOperandeGauche);
-// }
-operandeGauche = getValeur(1);
-operandeDroite = getValeur(2);
-// Console.WriteLine("Veuillez Saisir la deuxième valeure !");
-// string? strOperandeDroite = Console.ReadLine();
-// if (strOperandeDroite is not null)
-// {
-//     operandeDroite = int.Parse(strOperandeDroite);
-// }
 
+operandeGauche = getValeur("premiere");
+operandeDroite = getValeur("deuxième");
 
 //====== Operation ======
 Operation? operation = null;
