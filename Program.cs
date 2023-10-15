@@ -13,8 +13,6 @@ int getValeur(string valeur )
             try
             {
                 resultat = int.Parse(saisie);
-
-
             }
             catch
             {
@@ -29,7 +27,6 @@ Console.WriteLine("===La pétite calculatrice=====");
 // instanciation de la classe Calculatrice
 int operandeGauche = 0;
 int operandeDroite = 0;
-
 operandeGauche = getValeur("premiere");
 operandeDroite = getValeur("deuxième");
 
@@ -42,6 +39,7 @@ string? operateur = Console.ReadLine();
 if (operateur == "+")
 {
     operation = new Addition(operandeGauche, operandeDroite);
+
 
 }
 else if (operateur == "-")
@@ -64,8 +62,7 @@ else
 }
 Calculatrice calculatrice = new Calculatrice(operation);
 calculatrice.Executer();
-
-Console.WriteLine($"le resultat :{calculatrice._operation.Resultat}");
+Console.WriteLine($"le resultat {calculatrice._operation.ToString()} est :{calculatrice._operation.Resultat}");
 
 
 
