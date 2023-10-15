@@ -14,9 +14,25 @@ public class Addition : Operation
 
     public override string ToString()
     {
-        return $"{OperandeGauche } + { OperandeDroite}";
+        return $"{OperandeGauche} + {OperandeDroite}";
     }
 
 
+    public override bool Equals(object? obj)
+    {
+        if(obj is null)
+        {
+            return false;
+        }
+        if (obj is Addition addition)
+        {
+           return this.OperandeGauche == addition.OperandeGauche
+            && this.OperandeDroite == addition.OperandeDroite;
+        }else
+        {
+            return false;
+        }
+
+    }
 
 }

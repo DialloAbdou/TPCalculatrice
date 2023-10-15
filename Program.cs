@@ -32,6 +32,7 @@ operandeDroite = getValeur("deuxième");
 
 //====== Operation ======
 Operation? operation = null;
+Operation? operationSeconde = null;
 // instanciation du Constructeur
 Console.WriteLine("Veuillez saisir l'operateur pour le calcul");
 string? operateur = Console.ReadLine();
@@ -39,8 +40,8 @@ string? operateur = Console.ReadLine();
 if (operateur == "+")
 {
     operation = new Addition(operandeGauche, operandeDroite);
-
-
+    operationSeconde = new Addition(operandeGauche,operandeDroite);
+    Console.WriteLine($"les deux operation sont égaux ? {operation.Equals(operationSeconde)}");
 }
 else if (operateur == "-")
 {
