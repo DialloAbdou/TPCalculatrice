@@ -1,3 +1,5 @@
+using System.Security.Cryptography.X509Certificates;
+
 namespace Namespace;
 public class Addition : Operation
 {
@@ -9,5 +11,7 @@ public class Addition : Operation
     {
         Resultat = OperandeGauche + OperandeDroite;
     }
+
+
 
 }

@@ -18,7 +18,4 @@ public class Calculatrice
        _operation.Executer();
     }
 
- 
-
-
-}
+ }
